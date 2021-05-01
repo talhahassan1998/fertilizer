@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dubai Corporation</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="PriceList.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+
+    <!--This is a nevigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-left:5px; margin-right:5px; margin-top:5px">
+        <a class="navbar-brand" href="Home.html">
+            <img src="logo.jpg" width="60" height="60" ALIGN="left" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PriceList.html">Price List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OrderTracking.html">Order Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Login.html">Login <span class="sr-only">(current)</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--This is an end of nevigation bar-->
+    <!--Admin Success Page -->
+    <div class="adminSuccess">
+        <h3 style="text-align:center;">
+            Stock List with respect to companies products:
+        </h3>
+        <div align="center">
+            <input type="button" value="Add Items" class="btn btn-primary" id="updatebtn1.1">
+
+        </div>
+        <!-- --------------------------------------------------- -->
+        <div id="myModal1.1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" style="max-width: 25rem">
+
+                <form style="background-image:url(Warehouse.jpg)">
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock In</label>
+                            <input class="form-control" id="in" type="text" placeholder="Company Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock Out</label>
+                            <input class="form-control" id="out" type="text" placeholder="Product Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Date</label>
+                            <input class="form-control" id="date" type="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">New Stock</label>
+                            <input class="form-control" id="out" type="text" placeholder="Total Stock">
+
+                        </div>
+                    </div>
+                    <div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-left:20px">Add</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- --------------------------------------------------- -->
+        <div id="myModal1.2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" style="max-width: 25rem">
+
+                <form style="background-image:url(Warehouse.jpg)">
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock In</label>
+                            <input class="form-control" id="in" type="text" placeholder="Company Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock Out</label>
+                            <input class="form-control" id="out" type="text" placeholder="Product Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Date</label>
+                            <input class="form-control" id="date" type="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">New Stock</label>
+                            <input class="form-control" id="out" type="text" placeholder="Total Stock">
+
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="margin-left:200px">Update</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <div id="myModal1.3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" style="max-width: 25rem">
+
+                <form style="background-image:url(Warehouse.jpg)">
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock In</label>
+                            <input class="form-control" id="in" type="text" placeholder="Company Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Stock Out</label>
+                            <input class="form-control" id="out" type="text" placeholder="Product Name">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">Date</label>
+                            <input class="form-control" id="date" type="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="bg-transparent">
+                            <label for="example">New Stock</label>
+                            <input class="form-control" id="out" type="text" placeholder="Total Stock">
+
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="margin-left:200px">Delete</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+        <!-- --------------------------------------------------- -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal1.1');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("updatebtn1.1");
+
+
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <!-- --------------------------------------------------- -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" ; style="color:white">Company Name</th>
+                    <th scope="col" ; style="color:white">Product Name</th>
+                    <th scope="col" ; style="color:white">Stock available</th>
+                    <th scope="col" ; style="color:white; text-align:center">Update Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">Sona Urea</td>
+                    <td scope="row" ; style="color:white">1800</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">DAP Sona</td>
+                    <td scope="row" ; style="color:white">1500</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">FFC DAP</td>
+                    <td scope="row" ; style="color:white">1000</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">SOA</td>
+                    <td scope="row" ; style="color:white">800</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">MOP</td>
+                    <td scope="row" ; style="color:white">900</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fauji Fertilizer Company</th>
+                    <td scope="row" ; style="color:white">Zinc Boran</td>
+                    <td scope="row" ; style="color:white">1500</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro Urea</td>
+                    <td scope="row" ; style="color:white">2000</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro DAP</td>
+                    <td scope="row" ; style="color:white">1900</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro NP</td>
+                    <td scope="row" ; style="color:white">1700</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro NPK</td>
+                    <td scope="row" ; style="color:white">800</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro MAP</td>
+                    <td scope="row" ; style="color:white">500</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro Ammunium Sulphate</td>
+                    <td scope="row" ; style="color:white">1200</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro SSP</td>
+                    <td scope="row" ; style="color:white">1000</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro MOP</td>
+                    <td scope="row" ; style="color:white">9000</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro SOP</td>
+                    <td scope="row" ; style="color:white">770</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro Zinc(Zigro)</td>
+                    <td scope="row" ; style="color:white">978</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro NPK</td>
+                    <td scope="row" ; style="color:white">2000</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro Boran(Zoran)</td>
+                    <td scope="row" ; style="color:white">1930</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Engro Fertilizer</th>
+                    <td scope="row" ; style="color:white">Engro Zabardast Urea</td>
+                    <td scope="row" ; style="color:white">1300</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fatima Fertilizer</th>
+                    <td scope="row" ; style="color:white">Fatima Urea</td>
+                    <td scope="row" ; style="color:white">1200</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fatima Fertilizer</th>
+                    <td scope="row" ; style="color:white">Fatima DAP</td>
+
+                    <td scope="row" ; style="color:white">900</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fatima Fertilizer</th>
+                    <td scope="row" ; style="color:white">Fatima NP</td>
+
+                    <td scope="row" ; style="color:white">1500</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row" ; style="color:white">Fatima Fertilizer</th>
+                    <td scope="row" ; style="color:white">Fatima CAN</td>
+                    <td scope="row" ; style="color:white">800</td>
+                    <td align="center">
+                        <input type="button" value="Update" class="btn btn-primary" id="myModal1.2">
+                        <input type="button" value="Delete" class="btn btn-primary" id="myModal1.3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div align="center">
+            <a href="AdminLogin.html" style="margin-right:0px;
+                                  font-size:13px;
+                                  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <input type="button" value="Logout" class="btn btn-primary" id="button">
+            </a>
+        </div>
+    </div>
+    <!--Admin Success Page Completed-->
+</body>
+</html>

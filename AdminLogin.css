@@ -1,0 +1,24 @@
+body {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('Home-2.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.admin {
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container
+{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
